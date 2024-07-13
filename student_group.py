@@ -16,7 +16,7 @@ class Group:
 
     def delete_student(self, last_name):
         stdnt=self.find_student(last_name)
-        if stdnt!=None:
+        if not(stdnt is None):
             self.group.remove(stdnt)
 
     def find_student(self, last_name):
