@@ -9,5 +9,5 @@ class Human:
     def __str__(self):
         return f"{self.first_name} {self.last_name} ({self.gender[0].lower()})"
 
-    def __gt__(self, other):
+    def __eq__(self, other):
         return (self.first_name==other.first_name) and (self.last_name==other.last_name)
